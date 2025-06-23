@@ -1,0 +1,1210 @@
+/*
+ * NexlifyDesk Frontend Stylesheet
+ * Version: 1.0
+ * Description: Styles single ticket view and the ticket submission form and ticket list.
+ */
+
+   .nexlifydesk-frontend {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ticket Submission Form Styles */
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form {
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    border: 1px solid #e9ecef;
+}
+
+/* Form Header */
+.nexlifydesk-frontend .nexlifydesk-ticket-form h2 {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    margin: 0;
+    padding: 30px 40px;
+    color: #2c3e50;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Form Body */
+.nexlifydesk-frontend .nexlifydesk-ticket-form form {
+    padding: 30px 40px;
+}
+
+/* Form Groups */
+.nexlifydesk-frontend .nexlifydesk-ticket-form .form-group {
+    margin-bottom: 25px;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+    font-size: 14px;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form .form-group .required {
+    color: #e74c3c;
+    margin-left: 4px;
+}
+
+/* Input, Textarea, Select Fields */
+.nexlifydesk-frontend .nexlifydesk-ticket-form input[type="text"],
+.nexlifydesk-frontend .nexlifydesk-ticket-form textarea,
+.nexlifydesk-frontend .nexlifydesk-ticket-form select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #495057;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form input[type="text"]::placeholder,
+.nexlifydesk-frontend .nexlifydesk-ticket-form textarea::placeholder {
+    color: #adb5bd;
+    opacity: 1;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form input[type="text"]:focus,
+.nexlifydesk-frontend .nexlifydesk-ticket-form textarea:focus,
+.nexlifydesk-frontend .nexlifydesk-ticket-form select:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+/* File Upload Area */
+.nexlifydesk-frontend .nexlifydesk-ticket-form .file-upload-section .file-input {
+    width: 100%;
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form .file-upload-section .file-input:hover {
+    border-color: #80bdff;
+    background-color: #f1f7ff;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form .file-upload-info .file-help-text {
+    font-size: 13px;
+    color: #6c757d;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form .file-list {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Form Actions (Submit Button & Note) */
+.nexlifydesk-frontend .nexlifydesk-ticket-form .form-actions {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form .nexlifydesk-button.primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+    text-decoration: none;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form .nexlifydesk-button.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form .nexlifydesk-button .button-spinner {
+    margin-left: 8px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-form .form-note {
+    margin-top: 15px;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+/* Login Prompt */
+.nexlifydesk-frontend .login-prompt {
+    padding: 40px;
+    text-align: center;
+}
+.nexlifydesk-frontend .login-prompt h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.nexlifydesk-frontend .login-actions .nexlifydesk-button {
+     text-decoration: none;
+     margin-right: 10px;
+}
+.nexlifydesk-frontend .login-actions .nexlifydesk-button.primary {
+    background: #007bff; color: #fff; padding: 10px 20px; border-radius: 5px;
+}
+.nexlifydesk-frontend .login-actions .nexlifydesk-button.secondary {
+    background: #6c757d; color: #fff; padding: 10px 20px; border-radius: 5px;
+}
+
+
+/* Success & Error Messages */
+.nexlifydesk-frontend .nexlifydesk-message {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+
+.nexlifydesk-frontend .nexlifydesk-message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.nexlifydesk-frontend .nexlifydesk-message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Admin Notice */
+.nexlifydesk-frontend .nexlifydesk-notice {
+    margin: 0 40px 30px;
+    padding: 20px;
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    border-radius: 8px;
+}
+.nexlifydesk-frontend .nexlifydesk-notice .nexlifydesk-button {
+    text-decoration: none;
+    background: #007bff; color: #fff; padding: 8px 15px; border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+/* Post-Submission Success Message */
+.nexlifydesk-frontend .nexlifydesk-success-message {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #d4edda;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+}
+.nexlifydesk-frontend .nexlifydesk-success-message .success-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.nexlifydesk-frontend .nexlifydesk-success-message h3 {
+    color: #155724;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.nexlifydesk-frontend .nexlifydesk-success-message .success-actions .nexlifydesk-button {
+    text-decoration: none;
+    margin-right: 10px;
+}
+.nexlifydesk-frontend .nexlifydesk-success-message .success-actions .nexlifydesk-button.primary {
+     background: #28a745; color: #fff; padding: 10px 20px; border-radius: 5px;
+}
+.nexlifydesk-frontend .nexlifydesk-success-message .success-actions .nexlifydesk-button.secondary {
+     background: #6c757d; color: #fff; padding: 10px 20px; border-radius: 5px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nexlifydesk-frontend .nexlifydesk-ticket-form {
+        margin: 20px;
+    }
+    .nexlifydesk-frontend .nexlifydesk-ticket-form form,
+    .nexlifydesk-frontend .nexlifydesk-ticket-form h2,
+    .nexlifydesk-frontend .nexlifydesk-notice {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* Single Ticket View Styles */
+
+.nexlifydesk-frontend {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif ;
+    font-size: 14px ;
+    line-height: 1.5 ;
+    color: #333 ;
+}
+
+/* Main Container */
+.nexlifydesk-frontend .nexlifydesk-ticket-single {
+    max-width: 1200px ;
+    margin: 20px auto ;
+    padding: 0 ;
+    background: #fff ;
+    border-radius: 8px ;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) ;
+    overflow: hidden ;
+    border: 1px solid #e1e4e8 ;
+}
+
+/* Login/Register Section */
+.nexlifydesk-frontend .nexlifydesk-ticket-single p {
+    margin: 15px 0 ;
+    color: #586069 ;
+    font-size: 14px ;
+}
+
+/* Custom Button Styles - Universal Design */
+.nexlifydesk-frontend .nexlifydesk-button,
+.nexlifydesk-frontend button[type="submit"],
+.nexlifydesk-frontend input[type="submit"] {
+    display: inline-block ;
+    padding: 10px 20px ;
+    margin: 5px 10px 5px 0 ;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) ;
+    color: #fff ;
+    text-decoration: none ;
+    border-radius: 6px ;
+    border: none ;
+    font-size: 14px ;
+    font-weight: 500 ;
+    cursor: pointer ;
+    transition: all 0.3s ease ;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3) ;
+    text-align: center ;
+    min-width: 120px ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-button:hover,
+.nexlifydesk-frontend button[type="submit"]:hover,
+.nexlifydesk-frontend input[type="submit"]:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%) ;
+    transform: translateY(-1px) ;
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4) ;
+    color: #fff ;
+    text-decoration: none ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-button:active,
+.nexlifydesk-frontend button[type="submit"]:active,
+.nexlifydesk-frontend input[type="submit"]:active {
+    transform: translateY(0) ;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3) ;
+}
+
+/* Ticket Title */
+.nexlifydesk-frontend .nexlifydesk-ticket-single h2 {
+    background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%) ;
+    margin: 0 ;
+    padding: 25px 30px ;
+    color: #2c3e50 ;
+    font-size: 24px ;
+    font-weight: 600 ;
+    line-height: 1.4 ;
+    border-bottom: 2px solid #e1e4e8 ;
+    word-wrap: break-word ;
+    white-space: pre-wrap ;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8) ;
+}
+
+/* Ticket Details Section */
+.nexlifydesk-frontend .nexlifydesk-ticket-details {
+    padding: 30px ;
+    background: #fff ;
+    border-bottom: 1px solid #e1e4e8 ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-details table {
+    width: 100% ;
+    border-collapse: collapse ;
+    margin: 0 ;
+    background: #fff ;
+    border-radius: 8px ;
+    overflow: hidden ;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-details td {
+    padding: 15px 20px ;
+    border-bottom: 1px solid #f1f3f4 ;
+    vertical-align: top ;
+    font-size: 14px ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-details td:first-child {
+    background: #f8f9fa ;
+    font-weight: 600 ;
+    color: #2c3e50 ;
+    width: 180px ;
+    border-right: 1px solid #e9ecef ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-details td:last-child {
+    color: #495057 ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-details tr:last-child td {
+    border-bottom: none ;
+}
+
+/* Priority Badges */
+.nexlifydesk-frontend .priority-low {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb) ;
+    color: #155724 ;
+    padding: 6px 12px ;
+    border-radius: 15px ;
+    font-size: 12px ;
+    font-weight: 600 ;
+    text-transform: uppercase ;
+    letter-spacing: 0.5px ;
+    display: inline-block ;
+    box-shadow: 0 1px 3px rgba(21, 87, 36, 0.2) ;
+}
+
+.nexlifydesk-frontend .priority-medium {
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7) ;
+    color: #856404 ;
+    padding: 6px 12px ;
+    border-radius: 15px ;
+    font-size: 12px ;
+    font-weight: 600 ;
+    text-transform: uppercase ;
+    letter-spacing: 0.5px ;
+    display: inline-block ;
+    box-shadow: 0 1px 3px rgba(133, 100, 4, 0.2) ;
+}
+
+.nexlifydesk-frontend .priority-high {
+    background: linear-gradient(135deg, #f8d7da, #f5c6cb) ;
+    color: #721c24 ;
+    padding: 6px 12px ;
+    border-radius: 15px ;
+    font-size: 12px ;
+    font-weight: 600 ;
+    text-transform: uppercase ;
+    letter-spacing: 0.5px ;
+    display: inline-block ;
+    box-shadow: 0 1px 3px rgba(114, 28, 36, 0.2) ;
+}
+
+.nexlifydesk-frontend .priority-urgent {
+    background: linear-gradient(135deg, #f5c2c7, #dc3545) ;
+    color: #fff ;
+    padding: 6px 12px ;
+    border-radius: 15px ;
+    font-size: 12px ;
+    font-weight: 600 ;
+    text-transform: uppercase ;
+    letter-spacing: 0.5px ;
+    display: inline-block ;
+    box-shadow: 0 1px 3px rgba(220, 53, 69, 0.3) ;
+    animation: pulse-urgent 2s infinite ;
+}
+
+@keyframes pulse-urgent {
+    0% { transform: scale(1) ; box-shadow: 0 1px 3px rgba(220, 53, 69, 0.3) ; }
+    50% { transform: scale(1.05) ; box-shadow: 0 2px 6px rgba(220, 53, 69, 0.5) ; }
+    100% { transform: scale(1) ; box-shadow: 0 1px 3px rgba(220, 53, 69, 0.3) ; }
+}
+
+/* Status Badges */
+.nexlifydesk-frontend .status-open {
+    background: linear-gradient(135deg, #ccc7ff, #74b9ff);
+    color: #0c5460;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    box-shadow: 0 1px 3px rgba(12, 84, 96, 0.2);
+}
+
+.nexlifydesk-frontend .status-pending {
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7) ;
+    color: #856404 ;
+    padding: 6px 12px ;
+    border-radius: 15px ;
+    font-size: 12px ;
+    font-weight: 600 ;
+    text-transform: uppercase ;
+    letter-spacing: 0.5px ;
+    display: inline-block ;
+    box-shadow: 0 1px 3px rgba(133, 100, 4, 0.2) ;
+}
+
+.nexlifydesk-frontend .status-resolved {
+    background: linear-gradient(135deg, #d4edda, #00b894) ;
+    color: #fff ;
+    padding: 6px 12px ;
+    border-radius: 15px ;
+    font-size: 12px ;
+    font-weight: 600 ;
+    text-transform: uppercase ;
+    letter-spacing: 0.5px ;
+    display: inline-block ;
+    box-shadow: 0 1px 3px rgba(0, 184, 148, 0.3) ;
+}
+
+.nexlifydesk-frontend .status-closed {
+    background: linear-gradient(135deg, #e2e3e5, #6c757d) ;
+    color: #fff ;
+    padding: 6px 12px ;
+    border-radius: 15px ;
+    font-size: 12px ;
+    font-weight: 600 ;
+    text-transform: uppercase ;
+    letter-spacing: 0.5px ;
+    display: inline-block ;
+    box-shadow: 0 1px 3px rgba(108, 117, 125, 0.3) ;
+}
+
+/* Section Headers */
+.nexlifydesk-frontend .nexlifydesk-ticket-single h3 {
+    color: #2c3e50 ;
+    font-size: 20px ;
+    font-weight: 600 ;
+    margin: 30px 0 20px 0 ;
+    padding: 0 30px ;
+    position: relative ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-ticket-single h3::after {
+    content: '' ;
+    position: absolute ;
+    bottom: -5px ;
+    left: 30px ;
+    width: 40px ;
+    height: 3px ;
+    background: linear-gradient(135deg, #667eea, #764ba2) ;
+    border-radius: 2px ;
+}
+
+/* Message Section */
+.nexlifydesk-frontend .nexlifydesk-ticket-message {
+    margin: 0 30px 30px 30px ;
+    padding: 25px ;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%) ;
+    border-radius: 8px ;
+    border-left: 4px solid #667eea ;
+    line-height: 1 ;
+    color: #2c3e50 ;
+    white-space: pre-wrap ;
+    word-wrap: break-word ;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) ;
+}
+
+/* Attachments Section */
+.nexlifydesk-frontend .nexlifydesk-attachments {
+    margin: 0 30px 30px 30px ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-attachments ul {
+    list-style: none ;
+    padding: 0 ;
+    margin: 0 ;
+    display: grid ;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) ;
+    gap: 15px ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-attachments li {
+    margin: 0 ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-attachment {
+    display: flex ;
+    align-items: center ;
+    padding: 12px 16px ;
+    background: #fff ;
+    border: 2px solid #e1e4e8 ;
+    border-radius: 8px ;
+    transition: all 0.3s ease ;
+    text-decoration: none ;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-attachment:hover {
+    border-color: #667eea ;
+    background: linear-gradient(135deg, #f8f9ff, #f0f2ff) ;
+    transform: translateY(-2px) ;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15) ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-attachment::before {
+    content: '📎' ;
+    margin-right: 10px ;
+    font-size: 18px ;
+    flex-shrink: 0 ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-attachment[data-type="image"]::before {
+    content: '🖼️' ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-attachment[data-type="pdf"]::before {
+    content: '📄' ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-attachment a {
+    color: #667eea ;
+    text-decoration: none ;
+    font-weight: 500 ;
+    font-size: 14px ;
+    word-break: break-all ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-attachment a:hover {
+    color: #5a6fd8 ;
+    text-decoration: none ;
+}
+
+/* Replies Section */
+.nexlifydesk-frontend .nexlifydesk-replies {
+    margin: 0 30px 30px 30px ;
+    max-height: 600px ;
+    overflow-y: auto ;
+    border: 1px solid #e1e4e8 ;
+    border-radius: 8px ;
+    background: #f8f9fa ;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.07) ;
+    padding: 18px 22px ;
+    transition: box-shadow 0.2s;
+}
+
+/* Reply Form */
+.nexlifydesk-frontend .nexlifydesk-reply-form {
+    margin: 0 30px 30px 30px ;
+    padding: 25px ;
+    background: #fff ;
+    border: 1px solid #e1e4e8 ;
+    border-radius: 8px ;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-reply-form h3 {
+    margin-top: 0 ;
+    padding: 0 ;
+    color: #2c3e50 ;
+    font-size: 18px ;
+    margin-bottom: 20px ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-reply-form h3::after {
+    left: 0 ;
+}
+
+.nexlifydesk-frontend .form-group {
+    margin-bottom: 20px ;
+}
+
+.nexlifydesk-frontend .form-group label {
+    display: block ;
+    margin-bottom: 8px ;
+    font-weight: 600 ;
+    color: #2c3e50 ;
+    font-size: 14px ;
+}
+
+.nexlifydesk-frontend .form-group textarea,
+.nexlifydesk-frontend .form-group input[type="file"] {
+    width: 100% ;
+    padding: 12px 16px ;
+    border: 2px solid #e1e4e8 ;
+    border-radius: 6px ;
+    font-size: 14px ;
+    font-family: inherit ;
+    transition: all 0.3s ease ;
+    box-sizing: border-box ;
+    background: #fff ;
+}
+
+.nexlifydesk-frontend .form-group textarea:focus,
+.nexlifydesk-frontend .form-group input[type="file"]:focus {
+    outline: none ;
+    border-color: #667eea ;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) ;
+    background: #f8f9ff ;
+}
+
+.nexlifydesk-frontend .form-group textarea {
+    resize: vertical ;
+    min-height: 120px ;
+    line-height: 1.5 ;
+}
+
+.nexlifydesk-frontend .form-group .description {
+    margin-top: 8px ;
+    font-size: 13px ;
+    color: #6c757d ;
+    font-style: italic ;
+}
+
+/* Form Messages */
+.nexlifydesk-frontend .nexlifydesk-form-messages {
+    margin-bottom: 20px ;
+    padding: 15px 20px ;
+    border-radius: 6px ;
+    display: none ;
+    font-weight: 500 ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-form-messages.success {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb) ;
+    color: #155724 ;
+    border: 1px solid #c3e6cb ;
+    display: block ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-form-messages.error {
+    background: linear-gradient(135deg, #f8d7da, #f5c6cb) ;
+    color: #721c24 ;
+    border: 1px solid #f5c6cb ;
+    display: block ;
+}
+
+/* Closed Message */
+.nexlifydesk-frontend .nexlifydesk-closed-message {
+    margin: 0 30px 30px 30px ;
+    padding: 20px ;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef) ;
+    border: 1px solid #dee2e6 ;
+    border-radius: 8px ;
+    text-align: center ;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-closed-message p {
+    margin: 0 0 15px 0 ;
+    color: #6c757d ;
+    font-size: 15px ;
+    font-weight: 500 ;
+}
+
+/* Back Link */
+.nexlifydesk-frontend .back-link {
+    margin: 0 30px 20px 30px ;
+    padding-top: 20px ;
+    border-top: 1px solid #e1e4e8 ;
+}
+
+.nexlifydesk-frontend .back-link a {
+    color: #667eea ;
+    text-decoration: none ;
+    font-weight: 500 ;
+    font-size: 14px ;
+    transition: color 0.3s ease ;
+    display: inline-flex ;
+    align-items: center ;
+    margin: 0 30px 20px 30px ;
+    padding-top: 20px ;
+    padding-left: 10px ;
+}
+
+.nexlifydesk-frontend .back-link a:hover {
+    color: #5a6fd8 ;
+    text-decoration: none ;
+}
+
+/* Scrollbar Styling for Replies */
+.nexlifydesk-frontend .nexlifydesk-replies::-webkit-scrollbar {
+    width: 8px ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-replies::-webkit-scrollbar-track {
+    background: #f1f3f4 ;
+    border-radius: 4px ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-replies::-webkit-scrollbar-thumb {
+    background: #c1c8d1 ;
+    border-radius: 4px ;
+}
+
+.nexlifydesk-frontend .nexlifydesk-replies::-webkit-scrollbar-thumb:hover {
+    background: #a8b2bd ;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nexlifydesk-frontend .nexlifydesk-ticket-single {
+        margin: 10px ;
+        border-radius: 0 ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-single h2,
+    .nexlifydesk-frontend .nexlifydesk-ticket-details,
+    .nexlifydesk-frontend .nexlifydesk-ticket-single h3,
+    .nexlifydesk-frontend .nexlifydesk-ticket-message,
+    .nexlifydesk-frontend .nexlifydesk-attachments,
+    .nexlifydesk-frontend .nexlifydesk-replies,
+    .nexlifydesk-frontend .nexlifydesk-reply-form,
+    .nexlifydesk-frontend .nexlifydesk-closed-message,
+    .nexlifydesk-frontend .back-link {
+        margin-left: 15px ;
+        margin-right: 15px ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-single h2,
+    .nexlifydesk-frontend .nexlifydesk-ticket-details,
+    .nexlifydesk-frontend .nexlifydesk-ticket-message,
+    .nexlifydesk-frontend .nexlifydesk-reply-form,
+    .nexlifydesk-frontend .nexlifydesk-closed-message {
+        padding-left: 20px ;
+        padding-right: 20px ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-details table,
+    .nexlifydesk-frontend .nexlifydesk-ticket-details td {
+        display: flexbox ;
+        flex-direction: column ;
+        width: auto ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-details td:first-child {
+        background: #667eea ;
+        color: #fff ;
+        border-right: none ;
+        border-bottom: 1px solid rgba(255,255,255,0.2) ;
+        font-weight: 600 ;
+        padding: 10px 20px 5px 20px ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-details td:last-child {
+        padding: 5px 20px 15px 20px ;
+        background: #f8f9ff ;
+        border-bottom: 2px solid #e1e4e8 ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-attachments ul {
+        grid-template-columns: 1fr ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-single h3::after {
+        left: 15px ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-reply-form h3::after {
+        left: 0 ;
+    }
+}
+
+@media (max-width: 480px) {
+    .nexlifydesk-frontend .nexlifydesk-ticket-single h2 {
+        font-size: 20px ;
+        padding: 20px 15px ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-button,
+    .nexlifydesk-frontend button[type="submit"] {
+        width: 100% ;
+        margin: 5px 0 ;
+        text-align: center ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-details td {
+        padding: 10px 15px ;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .nexlifydesk-frontend .nexlifydesk-reply-form,
+    .nexlifydesk-frontend .nexlifydesk-closed-message .nexlifydesk-button,
+    .nexlifydesk-frontend .back-link {
+        display: none ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-single {
+        box-shadow: none ;
+        border: 1px solid #ccc ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-single h2 {
+        background: #f9f9f9 ;
+        color: #000 ;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-ticket-message {
+        background: #f9f9f9 ;
+        color: #000 ;
+    }
+}
+
+/* ==========================================================================
+   Base & Universal Styles (Required for Ticket List)
+   ========================================================================== */
+
+.nexlifydesk-frontend {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Universal Button Style */
+.nexlifydesk-frontend .nexlifydesk-button,
+.nexlifydesk-frontend .button-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+    text-decoration: none;
+}
+
+.nexlifydesk-frontend .nexlifydesk-button:hover,
+.nexlifydesk-frontend .button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Ticket List Styles */
+
+.nexlifydesk-frontend .nexlifydesk-tickets-list {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e9ecef;
+}
+
+.nexlifydesk-frontend .nexlifydesk-tickets-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 20px;
+}
+
+.nexlifydesk-frontend .nexlifydesk-tickets-header h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.nexlifydesk-frontend .nexlifydesk-tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nexlifydesk-frontend .nexlifydesk-tickets-table th,
+.nexlifydesk-frontend .nexlifydesk-tickets-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.nexlifydesk-frontend .nexlifydesk-tickets-table thead th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nexlifydesk-frontend .nexlifydesk-tickets-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.nexlifydesk-frontend .nexlifydesk-tickets-table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.nexlifydesk-frontend .nexlifydesk-tickets-table a:hover {
+    text-decoration: underline;
+}
+
+/* Status Badges */
+.nexlifydesk-frontend .nexlifydesk-tickets-table .status-badge {
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    display: inline-block;
+}
+
+.nexlifydesk-frontend .nexlifydesk-tickets-table .status-open { background-color: #28a745; }
+.nexlifydesk-frontend .nexlifydesk-tickets-table .status-pending { background-color: #ffc107; color: #333; }
+.nexlifydesk-frontend .nexlifydesk-tickets-table .status-resolved { background-color: #17a2b8; }
+.nexlifydesk-frontend .nexlifydesk-tickets-table .status-closed { background-color: #6c757d; }
+
+.nexlifydesk-frontend .nexlifydesk-tickets-table .button.button-small {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+    border: none;
+}
+.nexlifydesk-frontend .nexlifydesk-tickets-table .button.button-small:hover {
+    background-color: #5a6268;
+    text-decoration: none;
+}
+
+/* "No Tickets" View */
+.nexlifydesk-frontend .nexlifydesk-no-tickets {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 60px 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.nexlifydesk-frontend .nexlifydesk-no-tickets .nexlifydesk-icon {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.nexlifydesk-frontend .nexlifydesk-no-tickets h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.nexlifydesk-frontend .nexlifydesk-no-tickets p {
+    color: #6c757d;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .nexlifydesk-frontend .nexlifydesk-tickets-list,
+    .nexlifydesk-frontend .nexlifydesk-no-tickets {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .nexlifydesk-frontend .nexlifydesk-tickets-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nexlifydesk-frontend .nexlifydesk-tickets-header h3 {
+        margin-bottom: 15px;
+    }
+
+    /* Responsive Table: Transform into a list of cards */
+    .nexlifydesk-frontend .nexlifydesk-tickets-table thead {
+        display: none; /* Hide table headers */
+    }
+
+    .nexlifydesk-frontend .nexlifydesk-tickets-table tr {
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        border: 1px solid #e9ecef;
+        overflow: hidden;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-tickets-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        text-align: right; /* Align cell content to the right */
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .nexlifydesk-frontend .nexlifydesk-tickets-table td:last-child {
+        border-bottom: none;
+    }
+
+    .nexlifydesk-frontend .nexlifydesk-tickets-table td::before {
+        content: attr(data-label); /* Use data-label for the heading */
+        font-weight: 600;
+        text-align: left;
+        color: #495057;
+        padding-right: 15px;
+    }
+    
+    .nexlifydesk-frontend .nexlifydesk-tickets-table td:nth-of-type(1)::before { content: 'Ticket ID'; }
+    .nexlifydesk-frontend .nexlifydesk-tickets-table td:nth-of-type(2)::before { content: 'Subject'; }
+    .nexlifydesk-frontend .nexlifydesk-tickets-table td:nth-of-type(3)::before { content: 'Status'; }
+    .nexlifydesk-frontend .nexlifydesk-tickets-table td:nth-of-type(4)::before { content: 'Created'; }
+    .nexlifydesk-frontend .nexlifydesk-tickets-table td:nth-of-type(5)::before { content: 'Action'; }
+}
+
+/* --- Professional Chat Bubble Replies --- */
+.nexlifydesk-reply {
+    max-width: 70%;
+    margin-bottom: 18px;
+    padding: 16px 22px;
+    border-radius: 18px 18px 18px 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: relative;
+    clear: both;
+    font-size: 15px;
+    word-break: break-word;
+    transition: background 0.2s;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+/* Customer (gray/white bubble) */
+.nexlifydesk-reply.reply-customer {
+    background: #f6f8fa;
+    border: 1.5px solid #e1e4e8;
+    color: #23282d;
+}
+
+/* Admin (blue bubble) */
+.nexlifydesk-reply.reply-admin {
+    background: linear-gradient(135deg, #e3f0ff 0%, #cbe6ff 100%);
+    border: 1.5px solid #2271b1;
+    color: #1d2327;
+}
+
+/* Agent (green bubble) */
+.nexlifydesk-reply.reply-agent {
+    background: linear-gradient(135deg, #e6f4ea 0%, #c8f2d2 100%);
+    border: 1.5px solid #27ae60;
+    color: #1d2327;
+}
+
+/* Meta styling */
+.nexlifydesk-reply .reply-meta {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+    opacity: 0.85;
+    text-align: left;
+}
+
+.nexlifydesk-reply .reply-role {
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 6px;
+    color: #2271b1;
+}
+
+.nexlifydesk-reply.reply-agent .reply-role {
+    color: #27ae60;
+}
+
+.nexlifydesk-reply.reply-customer .reply-role {
+    color: #888;
+}
+
+/* Chat bubble tail on left for all */
+.nexlifydesk-reply::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 18px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 12px solid;
+    border-bottom: 10px solid transparent;
+}
+.nexlifydesk-reply.reply-customer::before {
+    border-right-color: #f6f8fa;
+}
+.nexlifydesk-reply.reply-admin::before {
+    border-right-color: #e3f0ff;
+}
+.nexlifydesk-reply.reply-agent::before {
+    border-right-color: #e6f4ea;
+}
+
+/* Add spacing between bubbles */
+.nexlifydesk-reply + .nexlifydesk-reply {
+    margin-top: 10px;
+}
+
+/* Responsive: Full width on mobile */
+@media (max-width: 600px) {
+    .nexlifydesk-reply {
+        max-width: 100%;
+        padding: 12px 10px;
+    }
+}

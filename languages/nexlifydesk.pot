@@ -1,0 +1,1240 @@
+# Copyright (C) 2025 NexlifyLabs - TeeJay
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: NexlifyDesk 1.0.0\n"
+"Report-Msgid-Bugs-To: https://nexlifylabs.com/support\n"
+"POT-Creation-Date: 2025-05-29T16:11:40+00:00\n"
+"PO-Revision-Date: 2025-05-29 17:08+0000\n"
+"Last-Translator: TeeJay <teejay@nexlifylabs.com>\n"
+"Language-Team: French Translation Team <teejay@nexlifylabs.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: nexlifydesk\n"
+
+#. Plugin Name of the plugin
+#: nexlifydesk.php
+#: includes/class-nexlifydesk-admin.php:20
+#: templates/admin/ticket-single.php:29
+msgid "NexlifyDesk"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: nexlifydesk.php
+msgid "https://nexlifylabs.com/nexlifydesk"
+msgstr ""
+
+#. Description of the plugin
+#: nexlifydesk.php
+msgid "A complete support ticketing system for WordPress with login/registration functionality."
+msgstr ""
+
+#. Author of the plugin
+#: nexlifydesk.php
+msgid "NexlifyLabs - TeeJay"
+msgstr ""
+
+#. Author URI of the plugin
+#: nexlifydesk.php
+msgid "https://nexlifylabs.com"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:19
+#: includes/class-nexlifydesk-admin.php:202
+#: templates/admin/tickets-list.php:13
+msgid "NexlifyDesk Tickets"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:31
+#: includes/class-nexlifydesk-admin.php:32
+msgid "All Tickets"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:41
+#: includes/class-nexlifydesk-admin.php:283
+msgid "Ticket Categories"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:42
+msgid "Categories"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:51
+#: includes/class-nexlifydesk-admin.php:52
+msgid "Settings"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:61
+#: includes/class-nexlifydesk-admin.php:62
+msgid "Reports"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:71
+#: includes/class-nexlifydesk-admin.php:72
+msgid "Agent Positions"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:93
+#: includes/class-nexlifydesk-admin.php:94
+msgid "Email Templates"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:126
+#: includes/class-nexlifydesk-admin.php:527
+msgid "View All Tickets"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:127
+#: includes/class-nexlifydesk-admin.php:528
+msgid "Assign Tickets"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:128
+#: includes/class-nexlifydesk-admin.php:529
+msgid "Manage Categories"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:129
+#: includes/class-nexlifydesk-admin.php:530
+msgid "View Reports"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:141
+#: includes/class-nexlifydesk-admin.php:574
+msgid "Position Name:"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:142
+#: includes/class-nexlifydesk-admin.php:575
+msgid "Position Slug (unique):"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:143
+#: includes/class-nexlifydesk-admin.php:576
+msgid "Assign Capabilities:"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:144
+msgid "Save"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:145
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:146
+msgid "Are you sure you want to delete this position?"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:148
+#: templates/admin/tickets-list.php:22
+msgid "Loading tickets..."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:149
+msgid "No tickets found."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:150
+msgid "Error loading tickets:"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:151
+msgid "AJAX Error loading tickets."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:152
+#: includes/class-nexlifydesk-admin.php:893
+#: templates/frontend/ticket-list.php:102
+#: templates/frontend/ticket-list.php:123
+msgid "Ticket ID"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:153
+#: templates/frontend/ticket-form.php:36
+#: templates/frontend/ticket-list.php:103
+#: templates/frontend/ticket-list.php:126
+msgid "Subject"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:154
+#: templates/frontend/ticket-list.php:104
+#: templates/frontend/ticket-list.php:136
+msgid "Status"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:155
+#: templates/frontend/ticket-list.php:105
+#: templates/frontend/ticket-list.php:141
+msgid "Created"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:156
+#: includes/class-nexlifydesk-admin.php:306
+#: includes/class-nexlifydesk-admin.php:538
+#: templates/frontend/ticket-list.php:109
+#: templates/frontend/ticket-list.php:175
+msgid "Actions"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:157
+msgid "View"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:164
+#: templates/admin/tickets-list.php:8
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:179
+msgid "You do not have permission to view this ticket."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:187
+#: includes/class-nexlifydesk-admin.php:213
+#: templates/admin/ticket-single.php:13
+msgid "Ticket not found."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:196
+msgid "Security check failed. Please try again."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:216
+#: templates/frontend/ticket-single.php:56
+#: templates/frontend/ticket-single.php:271
+msgid "← Back to All Tickets"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:226
+msgid "Search Tickets:"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:228
+msgid "Search Tickets"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:233
+msgid "All Statuses"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:234
+#: templates/admin/ticket-single.php:53
+msgid "Open"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:235
+#: templates/admin/ticket-single.php:54
+msgid "Pending"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:236
+#: templates/admin/ticket-single.php:55
+msgid "Resolved"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:237
+#: templates/admin/ticket-single.php:56
+msgid "Closed"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:239
+msgid "Filter"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:243
+msgid "Bulk Actions"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:244
+msgid "Change Status"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:245
+msgid "Assign Agent"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:247
+msgid "Apply"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:283
+msgid "Add New"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:288
+msgid "Category Name"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:292
+#: includes/class-nexlifydesk-admin.php:305
+msgid "Description"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:297
+#: nexlifydesk.php:384
+msgid "Add Category"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:303
+#: includes/class-nexlifydesk-admin.php:538
+msgid "Name"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:304
+#: includes/class-nexlifydesk-admin.php:538
+msgid "Slug"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:316
+#: includes/class-nexlifydesk-admin.php:557
+msgid "Delete"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:329
+msgid "NexlifyDesk Settings"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:338
+msgid "NexlifyDesk Reports"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:339
+msgid "Coming soon: Detailed reports on ticket volume, response times, and agent performance."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:349
+msgid "NexlifyDesk Agent Positions"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:379
+#: includes/class-nexlifydesk-admin.php:443
+#: includes/class-nexlifydesk-admin.php:485
+#: includes/class-nexlifydesk-admin.php:654
+#: includes/class-nexlifydesk-admin.php:960
+msgid "Security check failed."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:399
+msgid "Position Name and Slug are required."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:410
+msgid "A position with this slug already exists."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:424
+msgid "Agent position added successfully."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:456
+msgid "Agent position deleted."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:463
+msgid "Position not found."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:509
+msgid "Agent position updated."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:535
+msgid "Existing Positions"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:538
+msgid "Capabilities"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:552
+#: includes/class-nexlifydesk-admin.php:619
+#: includes/class-nexlifydesk-admin.php:626
+#: includes/class-nexlifydesk-users.php:75
+msgid "None"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:556
+msgid "Edit"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:564
+msgid "No agent positions defined yet."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:568
+msgid "Add New Position"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:582
+msgid "Add Position"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:587
+msgid "Assign Positions to Agents"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:604
+msgid "No NexlifyDesk Agents found."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:614
+msgid "Agent Name"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:614
+msgid "Current Position"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:614
+msgid "Assign Position"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:638
+msgid "Save Agent Assignments"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:674
+msgid "Agent assignments saved successfully."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:676
+msgid "No agent assignments to save."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:697
+#: includes/class-nexlifydesk-admin.php:987
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:713
+#: includes/class-nexlifydesk-ajax.php:611
+msgid "Category added successfully!"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:745
+#: includes/class-nexlifydesk-ajax.php:554
+msgid "Category name is required."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:779
+#: includes/class-nexlifydesk-ajax.php:583
+msgid "A category with this name already exists."
+msgstr ""
+
+#. translators: %s: Database error message
+#: includes/class-nexlifydesk-admin.php:806
+#: includes/class-nexlifydesk-ajax.php:604
+#, php-format
+msgid "Failed to add category: %s"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:869
+msgid "Email templates saved!"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:874
+msgid "NexlifyDesk Email Templates"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:877
+msgid "New Ticket"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:879
+msgid "New Reply"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:881
+msgid "Status Changed"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:883
+msgid "SLA Breach"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:886
+msgid "Save Templates"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:891
+msgid "Available Placeholders"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:894
+msgid "Ticket Subject"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:895
+msgid "Ticket Message"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:896
+msgid "User Name"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:897
+msgid "User Email"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:898
+msgid "Ticket Status"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:899
+msgid "Ticket Priority"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:900
+msgid "Ticket Category"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:901
+msgid "Created Date/Time"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:902
+msgid "Last Updated Date/Time"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:903
+msgid "Reply Message (for reply emails)"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:904
+msgid "Reply Author Name (for reply emails)"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:906
+msgid "Copy and paste these placeholders into your templates. They will be replaced with real ticket data."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:917
+msgid "Too many attempts. Please try again later."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:946
+msgid "NexlifyDesk Data Warning:"
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:947
+msgid "Data retention is currently disabled. All tickets and customer data will be permanently deleted if you uninstall the plugin."
+msgstr ""
+
+#: includes/class-nexlifydesk-admin.php:949
+msgid "Review Settings"
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:29
+msgid "You must be logged in to submit a ticket."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:39
+#: includes/class-nexlifydesk-tickets.php:30
+msgid "Subject and message are required."
+msgstr ""
+
+#. translators: 1: Ticket ID
+#: includes/class-nexlifydesk-ajax.php:122
+#, php-format
+msgid "Ticket #%s submitted successfully! Redirecting..."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:136
+msgid "You must be logged in to reply."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:141
+#: includes/class-nexlifydesk-ajax.php:239
+msgid "Missing required fields."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:154
+#: nexlifydesk.php:388
+msgid "This ticket is closed. Please create a new ticket for further assistance."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:224
+msgid "Reply added successfully!"
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:234
+msgid "You must be logged in to update ticket status."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:249
+msgid "Only administrators can change the status of closed tickets."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:256
+msgid "You do not have permission to update this ticket status."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:262
+msgid "Invalid ticket status."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:268
+msgid "Ticket status updated!"
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:270
+msgid "Could not update ticket status."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:279
+msgid "You must be logged in to upload files."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:283
+msgid "No file uploaded or invalid file format."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:297
+msgid "File upload error occurred."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:302
+msgid "Invalid file upload."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:310
+msgid "File type not allowed. Only JPG, JPEG, PNG, and PDF files are permitted."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:333
+msgid "File content does not match file extension."
+msgstr ""
+
+#. translators: %d: Maximum file size in megabytes
+#: includes/class-nexlifydesk-ajax.php:345
+#, php-format
+msgid "File size exceeds maximum limit of %dMB."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:373
+msgid "Could not upload file."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:385
+msgid "You do not have permission to view tickets."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:472
+msgid "You do not have permission to assign tickets."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:477
+msgid "Missing required parameters."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:485
+msgid "Invalid ticket ID or user ID."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:537
+msgid "Ticket assigned successfully!"
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:539
+msgid "Could not assign ticket."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:547
+msgid "You do not have permission to add categories."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:619
+msgid "You do not have permission to delete categories."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:624
+msgid "Category ID is required."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:632
+msgid "Invalid category ID."
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:647
+msgid "Category deleted successfully!"
+msgstr ""
+
+#: includes/class-nexlifydesk-ajax.php:649
+msgid "Could not delete category."
+msgstr ""
+
+#: includes/class-nexlifydesk-shortcodes.php:37
+msgid "Ticket form template not found."
+msgstr ""
+
+#: includes/class-nexlifydesk-shortcodes.php:53
+msgid "My Support Tickets"
+msgstr ""
+
+#: includes/class-nexlifydesk-shortcodes.php:78
+msgid "Single ticket template not found."
+msgstr ""
+
+#: includes/class-nexlifydesk-shortcodes.php:85
+msgid "You do not have permission to view this ticket or the ticket does not exist."
+msgstr ""
+
+#: includes/class-nexlifydesk-shortcodes.php:86
+msgid "← Back to ticket list"
+msgstr ""
+
+#: includes/class-nexlifydesk-shortcodes.php:97
+msgid "Ticket list template not found."
+msgstr ""
+
+#: includes/class-nexlifydesk-tickets.php:54
+msgid "Could not create ticket."
+msgstr ""
+
+#: includes/class-nexlifydesk-tickets.php:261
+msgid "Message is required."
+msgstr ""
+
+#: includes/class-nexlifydesk-tickets.php:279
+msgid "Could not add reply."
+msgstr ""
+
+#. translators: %s: Ticket ID number
+#: includes/class-nexlifydesk-tickets.php:582
+#, php-format
+msgid "New Support Ticket #%s"
+msgstr ""
+
+#. translators: %s: Ticket ID number
+#: includes/class-nexlifydesk-tickets.php:593
+#, php-format
+msgid "New Reply to Ticket #%s"
+msgstr ""
+
+#. translators: %s: Ticket ID number
+#: includes/class-nexlifydesk-tickets.php:604
+#, php-format
+msgid "Ticket #%s Status Changed"
+msgstr ""
+
+#. translators: %s: Ticket ID number
+#: includes/class-nexlifydesk-tickets.php:614
+#, php-format
+msgid "SLA Breach: Ticket #%s"
+msgstr ""
+
+#: includes/class-nexlifydesk-users.php:29
+msgid "NexlifyDesk Agent"
+msgstr ""
+
+#: includes/class-nexlifydesk-users.php:68
+msgid "NexlifyDesk Agent Position"
+msgstr ""
+
+#: includes/class-nexlifydesk-users.php:72
+msgid "Assigned Position"
+msgstr ""
+
+#: includes/class-nexlifydesk-users.php:82
+msgid "Assign a predefined position to this agent."
+msgstr ""
+
+#: includes/class-nexlifydesk-users.php:109
+msgid "Security verification failed."
+msgstr ""
+
+#: nexlifydesk.php:78
+msgid "Critical plugin files are missing or inaccessible."
+msgstr ""
+
+#: nexlifydesk.php:92
+msgid "Critical plugin files have been modified."
+msgstr ""
+
+#: nexlifydesk.php:100
+msgid "Freemius SDK is not properly initialized."
+msgstr ""
+
+#: nexlifydesk.php:120
+msgid "NexlifyDesk: Critical files are missing. The plugin has been disabled. Please reinstall the original plugin."
+msgstr ""
+
+#: nexlifydesk.php:294
+msgid "This ticket was automatically closed after being resolved for 48 hours with no activity."
+msgstr ""
+
+#: nexlifydesk.php:377
+msgid "Uploading..."
+msgstr ""
+
+#: nexlifydesk.php:380
+msgid "Submitting..."
+msgstr ""
+
+#: nexlifydesk.php:381
+#: templates/frontend/ticket-form.php:108
+msgid "Submit Ticket"
+msgstr ""
+
+#: nexlifydesk.php:382
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: nexlifydesk.php:383
+msgid "Adding..."
+msgstr ""
+
+#: nexlifydesk.php:385
+#: templates/admin/ticket-single.php:260
+#: templates/admin/ticket-single.php:288
+#: templates/frontend/ticket-single.php:219
+#: templates/frontend/ticket-single.php:247
+msgid "Add Reply"
+msgstr ""
+
+#: nexlifydesk.php:387
+#: templates/frontend/ticket-single.php:263
+msgid "Create New Ticket"
+msgstr ""
+
+#: nexlifydesk.php:389
+msgid "Status updated successfully!"
+msgstr ""
+
+#: templates/admin/settings.php:54
+msgid "General Settings"
+msgstr ""
+
+#: templates/admin/settings.php:57
+msgid "Enable Email Notifications"
+msgstr ""
+
+#: templates/admin/settings.php:60
+msgid "Send email notifications for new tickets, replies, and status changes."
+msgstr ""
+
+#: templates/admin/settings.php:64
+msgid "Default Priority"
+msgstr ""
+
+#: templates/admin/settings.php:67
+msgid "Low"
+msgstr ""
+
+#: templates/admin/settings.php:68
+msgid "Medium"
+msgstr ""
+
+#: templates/admin/settings.php:69
+msgid "High"
+msgstr ""
+
+#: templates/admin/settings.php:70
+msgid "Urgent"
+msgstr ""
+
+#: templates/admin/settings.php:72
+msgid "Default priority for new tickets."
+msgstr ""
+
+#: templates/admin/settings.php:76
+msgid "Auto-Assign Tickets"
+msgstr ""
+
+#: templates/admin/settings.php:79
+msgid "Automatically assign new tickets to available support agents."
+msgstr ""
+
+#: templates/admin/settings.php:83
+msgid "Ticket Page"
+msgstr ""
+
+#: templates/admin/settings.php:86
+msgid "Select a page"
+msgstr ""
+
+#: templates/admin/settings.php:96
+msgid "No pages available"
+msgstr ""
+
+#: templates/admin/settings.php:99
+msgid "Select the page where the ticket form and list shortcodes are embedded."
+msgstr ""
+
+#: templates/admin/settings.php:103
+msgid "Ticket ID Prefix"
+msgstr ""
+
+#: templates/admin/settings.php:106
+msgid "Prefix for ticket IDs (e.g., T, #, TKT-)."
+msgstr ""
+
+#: templates/admin/settings.php:110
+msgid "Ticket ID Start Number"
+msgstr ""
+
+#: templates/admin/settings.php:113
+msgid "The number to start ticket IDs from (e.g., 1001). Only used if no tickets exist yet."
+msgstr ""
+
+#: templates/admin/settings.php:117
+msgid "Data Retention on Uninstall"
+msgstr ""
+
+#: templates/admin/settings.php:120
+msgid "Keep all tickets and data when plugin is uninstalled"
+msgstr ""
+
+#: templates/admin/settings.php:122
+msgid "Recommended: Keep enabled"
+msgstr ""
+
+#: templates/admin/settings.php:123
+msgid "When enabled, all tickets, replies, attachments, and customer data will be preserved even after plugin deletion. Disable only if you want to completely remove all plugin data during uninstall."
+msgstr ""
+
+#: templates/admin/settings.php:127
+msgid "Warning: Unchecking this option will permanently delete ALL ticket data when the plugin is uninstalled!"
+msgstr ""
+
+#: templates/admin/settings.php:130
+msgid "This includes: All tickets, customer replies, agent responses, attachments, categories, and support history."
+msgstr ""
+
+#: templates/admin/settings.php:137
+msgid "File Upload Settings"
+msgstr ""
+
+#: templates/admin/settings.php:140
+msgid "Allowed File Types"
+msgstr ""
+
+#: templates/admin/settings.php:143
+msgid "Comma-separated list of allowed file extensions (e.g., jpg,png,pdf)."
+msgstr ""
+
+#: templates/admin/settings.php:147
+msgid "Maximum File Size (MB)"
+msgstr ""
+
+#: templates/admin/settings.php:150
+msgid "Maximum size for uploaded files in megabytes."
+msgstr ""
+
+#: templates/admin/settings.php:155
+msgid "SLA Settings"
+msgstr ""
+
+#: templates/admin/settings.php:158
+msgid "SLA Response Time (Hours)"
+msgstr ""
+
+#: templates/admin/settings.php:161
+msgid "Expected response time for tickets (in hours)."
+msgstr ""
+
+#: templates/admin/settings.php:165
+msgid "Default Category"
+msgstr ""
+
+#: templates/admin/settings.php:177
+msgid "No categories available"
+msgstr ""
+
+#: templates/admin/settings.php:180
+msgid "Default category for new tickets."
+msgstr ""
+
+#: templates/admin/settings.php:186
+msgid "Save Settings"
+msgstr ""
+
+#: templates/admin/ticket-single.php:37
+#: templates/frontend/ticket-single.php:77
+msgid "Ticket ID:"
+msgstr ""
+
+#: templates/admin/ticket-single.php:38
+#: templates/frontend/ticket-single.php:81
+msgid "Submitted By:"
+msgstr ""
+
+#: templates/admin/ticket-single.php:38
+#: templates/admin/ticket-single.php:201
+#: templates/frontend/ticket-single.php:82
+#: templates/frontend/ticket-single.php:190
+msgid "Guest"
+msgstr ""
+
+#: templates/admin/ticket-single.php:39
+#: templates/frontend/ticket-single.php:85
+msgid "Category:"
+msgstr ""
+
+#: templates/admin/ticket-single.php:39
+#: templates/frontend/ticket-single.php:86
+msgid "N/A"
+msgstr ""
+
+#: templates/admin/ticket-single.php:40
+#: templates/frontend/ticket-single.php:89
+msgid "Priority:"
+msgstr ""
+
+#: templates/admin/ticket-single.php:41
+#: templates/frontend/ticket-single.php:93
+msgid "Status:"
+msgstr ""
+
+#: templates/admin/ticket-single.php:47
+msgid "(Only administrators can change the status of closed tickets)"
+msgstr ""
+
+#: templates/admin/ticket-single.php:60
+#: templates/frontend/ticket-single.php:99
+msgid "Assigned To:"
+msgstr ""
+
+#: templates/admin/ticket-single.php:68
+#: templates/admin/ticket-single.php:103
+#: templates/frontend/ticket-list.php:170
+#: templates/frontend/ticket-single.php:100
+msgid "Unassigned"
+msgstr ""
+
+#: templates/admin/ticket-single.php:106
+#: templates/frontend/ticket-single.php:103
+msgid "Created:"
+msgstr ""
+
+#: templates/admin/ticket-single.php:117
+#: templates/admin/ticket-single.php:132
+#: templates/admin/ticket-single.php:199
+#: templates/frontend/ticket-list.php:157
+#: templates/frontend/ticket-single.php:114
+#: templates/frontend/ticket-single.php:130
+#: templates/frontend/ticket-single.php:187
+msgid "Invalid date"
+msgstr ""
+
+#: templates/admin/ticket-single.php:121
+#: templates/frontend/ticket-single.php:119
+msgid "Last Updated:"
+msgstr ""
+
+#: templates/admin/ticket-single.php:140
+#: templates/frontend/ticket-form.php:42
+#: templates/frontend/ticket-single.php:137
+msgid "Message"
+msgstr ""
+
+#: templates/admin/ticket-single.php:158
+#: templates/admin/ticket-single.php:268
+#: templates/frontend/ticket-form.php:77
+#: templates/frontend/ticket-single.php:144
+#: templates/frontend/ticket-single.php:227
+msgid "Attachments"
+msgstr ""
+
+#: templates/admin/ticket-single.php:183
+#: templates/frontend/ticket-single.php:170
+msgid "Replies"
+msgstr ""
+
+#: templates/admin/ticket-single.php:223
+#: templates/frontend/ticket-single.php:196
+msgid "Attachments:"
+msgstr ""
+
+#: templates/admin/ticket-single.php:255
+msgid "This ticket is closed. Replies are disabled."
+msgstr ""
+
+#: templates/admin/ticket-single.php:264
+#: templates/frontend/ticket-single.php:223
+msgid "Your Reply"
+msgstr ""
+
+#. translators: 1: Maximum file size in megabytes, 2: Comma-separated list of allowed file types
+#. translators: 1: Maximum file size in megabytes, 2: Comma-separated list of allowed file extensions
+#: templates/admin/ticket-single.php:278
+#: templates/frontend/ticket-single.php:237
+#, php-format
+msgid "Max file size: %1$sMB. Allowed types: %2$s"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:13
+msgid "Submit Support Ticket"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:21
+msgid "Administrators should use the admin panel to manage tickets."
+msgstr ""
+
+#: templates/frontend/ticket-form.php:23
+msgid "Go to Admin Panel"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:38
+msgid "Brief description of your issue"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:44
+msgid "Please provide detailed information about your issue..."
+msgstr ""
+
+#: templates/frontend/ticket-form.php:48
+msgid "Category"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:50
+msgid "Select a category..."
+msgstr ""
+
+#: templates/frontend/ticket-form.php:60
+msgid "General Support"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:66
+msgid "Priority"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:68
+msgid "Low - General inquiry"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:69
+msgid "Medium - Standard issue"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:70
+msgid "High - Important issue"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:71
+msgid "Urgent - Critical issue"
+msgstr ""
+
+#. translators: 1: Max file size, 2: Allowed file types
+#: templates/frontend/ticket-form.php:90
+#, php-format
+msgid "Maximum file size: %1$sMB. Allowed types: %2$s"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:113
+msgid "Fields marked with * are required"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:119
+msgid "Login Required"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:120
+msgid "Please log in to submit a support ticket."
+msgstr ""
+
+#: templates/frontend/ticket-form.php:123
+#: templates/frontend/ticket-list.php:11
+#: templates/frontend/ticket-single.php:26
+msgid "Log In"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:127
+#: templates/frontend/ticket-list.php:13
+#: templates/frontend/ticket-single.php:28
+msgid "Register"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:151
+msgid "Ticket Submitted Successfully!"
+msgstr ""
+
+#. translators: 1: Ticket ID
+#: templates/frontend/ticket-form.php:155
+#, php-format
+msgid "Your request has been received! Your ticket number is %1$s."
+msgstr ""
+
+#: templates/frontend/ticket-form.php:159
+msgid "You will receive updates via email when our support team responds."
+msgstr ""
+
+#: templates/frontend/ticket-form.php:163
+msgid "View Your Ticket"
+msgstr ""
+
+#: templates/frontend/ticket-form.php:167
+msgid "Submit Another Ticket"
+msgstr ""
+
+#: templates/frontend/ticket-list.php:9
+#: templates/frontend/ticket-single.php:24
+msgid "Please log in to view your support tickets."
+msgstr ""
+
+#: templates/frontend/ticket-list.php:39
+msgid "Invalid security token. Please try accessing the ticket from the ticket list."
+msgstr ""
+
+#: templates/frontend/ticket-list.php:42
+msgid "Back to Ticket List"
+msgstr ""
+
+#: templates/frontend/ticket-list.php:61
+msgid "Your Assigned Tickets"
+msgstr ""
+
+#: templates/frontend/ticket-list.php:68
+msgid "Your Submitted Tickets"
+msgstr ""
+
+#: templates/frontend/ticket-list.php:83
+msgid "No tickets found"
+msgstr ""
+
+#: templates/frontend/ticket-list.php:86
+msgid "You haven't submitted any support tickets yet."
+msgstr ""
+
+#: templates/frontend/ticket-list.php:90
+msgid "Submit Your First Ticket"
+msgstr ""
+
+#: templates/frontend/ticket-list.php:107
+#: templates/frontend/ticket-list.php:165
+msgid "Assigned To"
+msgstr ""
+
+#: templates/frontend/ticket-list.php:147
+msgid "Today"
+msgstr ""
+
+#: templates/frontend/ticket-list.php:149
+msgid "Yesterday"
+msgstr ""
+
+#. translators: %d: Number of days ago
+#: templates/frontend/ticket-list.php:152
+#, php-format
+msgid "%d days ago"
+msgstr ""
+
+#: templates/frontend/ticket-list.php:186
+msgid "View Details"
+msgstr ""
+
+#: templates/frontend/ticket-single.php:10
+msgid "Security check failed"
+msgstr ""
+
+#: templates/frontend/ticket-single.php:54
+msgid "You are not authorized to view this ticket or the ticket does not exist."
+msgstr ""
+
+#: templates/frontend/ticket-single.php:255
+msgid "This ticket is closed. If you need further assistance, please open a new ticket."
+msgstr ""

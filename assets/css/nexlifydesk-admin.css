@@ -1,0 +1,1056 @@
+/* Reports Dashboard - Scoped to reports page only */
+.nexlifydesk-reports-dashboard {
+    padding: 40px 20px 20px 20px;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    background: #f7f7f9;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.nexlifydesk-reports-dashboard .nexlifydesk-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nexlifydesk-reports-dashboard .nexlifydesk-logo-img {
+    max-width: 200px;
+    height: auto;
+}
+
+.nexlifydesk-reports-dashboard .metrics-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.nexlifydesk-reports-dashboard .metric-card {
+    min-width: 180px;
+    max-width: 220px;
+}
+
+.nexlifydesk-reports-dashboard .metric-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2271b1;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.nexlifydesk-reports-dashboard .metric-label {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nexlifydesk-reports-dashboard .charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.nexlifydesk-reports-dashboard .chart-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-height: 400px;
+}
+
+.nexlifydesk-reports-dashboard .chart-container.full-width {
+    grid-column: 1 / -1;
+    min-height: 350px;
+}
+
+.nexlifydesk-reports-dashboard .chart-container h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.nexlifydesk-reports-dashboard .chart-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    height: 320px;
+}
+
+.nexlifydesk-reports-dashboard .chart-wrapper canvas {
+    flex-shrink: 0;
+}
+
+.nexlifydesk-reports-dashboard .chart-container.full-width .chart-wrapper {
+    justify-content: center;
+    height: 280px;
+}
+
+.nexlifydesk-reports-dashboard .chart-legend {
+    flex: 1;
+    min-width: 150px;
+}
+
+.nexlifydesk-reports-dashboard .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.nexlifydesk-reports-dashboard .legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.nexlifydesk-reports-dashboard .legend-color.status-open { background: #3498db; }
+.nexlifydesk-reports-dashboard .legend-color.status-pending { background: #f39c12; }
+.nexlifydesk-reports-dashboard .legend-color.status-resolved { background: #27ae60; }
+.nexlifydesk-reports-dashboard .legend-color.status-closed { background: #95a5a6; }
+
+.nexlifydesk-reports-dashboard .legend-color.priority-low { background: #27ae60; }
+.nexlifydesk-reports-dashboard .legend-color.priority-medium { background: #f39c12; }
+.nexlifydesk-reports-dashboard .legend-color.priority-high { background: #e67e22; }
+.nexlifydesk-reports-dashboard .legend-color.priority-urgent { background: #e74c3c; }
+
+.nexlifydesk-reports-dashboard .agent-performance,
+.nexlifydesk-reports-dashboard .recent-activity {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nexlifydesk-reports-dashboard .agent-performance h3,
+.nexlifydesk-reports-dashboard .recent-activity h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.nexlifydesk-reports-dashboard .agent-performance table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nexlifydesk-reports-dashboard .agent-performance th,
+.nexlifydesk-reports-dashboard .agent-performance td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.nexlifydesk-reports-dashboard .agent-performance th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.nexlifydesk-reports-dashboard .activity-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.nexlifydesk-reports-dashboard .activity-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.nexlifydesk-reports-dashboard .activity-item:last-child {
+    border-bottom: none;
+}
+
+.nexlifydesk-reports-dashboard .activity-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.nexlifydesk-reports-dashboard .activity-icon.status-new { background: #3498db; }
+.nexlifydesk-reports-dashboard .activity-icon.status-reply { background: #27ae60; }
+
+.nexlifydesk-reports-dashboard .activity-content {
+    flex: 1;
+}
+
+.nexlifydesk-reports-dashboard .activity-text {
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.nexlifydesk-reports-dashboard .activity-time {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .nexlifydesk-reports-dashboard .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nexlifydesk-reports-dashboard .chart-wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .nexlifydesk-reports-dashboard .chart-legend {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nexlifydesk-reports-dashboard {
+        padding: 15px;
+    }
+    
+    .nexlifydesk-reports-dashboard .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+    }
+    
+    .nexlifydesk-reports-dashboard .metric-card {
+        padding: 15px;
+    }
+    
+    .nexlifydesk-reports-dashboard .metric-value {
+        font-size: 2em;
+    }
+    
+    .nexlifydesk-reports-dashboard .chart-container {
+        padding: 15px;
+        min-height: auto;
+    }
+    
+    .nexlifydesk-reports-dashboard .chart-wrapper {
+        height: auto;
+    }
+}
+
+/* Ensure canvas elements don't interfere with layout */
+.nexlifydesk-reports-dashboard canvas {
+    display: block;
+    max-width: 100%;
+}
+
+.nexlifydesk-email-preview {
+    background: #fff;
+    min-height: 60px;
+    border-radius: 4px;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+         url('../fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+         url('../fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* NexlifyDesk Admin Tickets List Styles */
+.wrap.nexlifydesk-tickets-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.nexlifydesk-tickets-page h1 {
+    margin-bottom: 20px;
+    color: #1d2327;
+    font-weight: 500;
+}
+
+/* Filters Section */
+.nexlifydesk-filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f6f7f7;
+    border-radius: 6px;
+}
+
+.nexlifydesk-filters label {
+    font-weight: 500;
+    margin-right: 5px;
+    color: #2c3338;
+}
+
+.nexlifydesk-filters select,
+.nexlifydesk-filters input[type="text"] {
+    padding: 7px 10px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    min-width: 200px;
+    height: 36px;
+}
+
+.nexlifydesk-filters input[type="text"] {
+    flex: 1;
+    min-width: 250px;
+}
+
+.nexlifydesk-filters button {
+    height: 36px;
+    padding: 0 15px;
+    background: #2271b1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.nexlifydesk-filters button:hover {
+    background: #135e96;
+}
+
+/* Tickets Table */
+#nexlifydesk-tickets-list {
+    margin-top: 20px;
+}
+
+#nexlifydesk-tickets-list table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#nexlifydesk-tickets-list th {
+    text-align: left;
+    padding: 12px 15px;
+    background: #f6f7f7;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 500;
+    color: #2c3338;
+}
+
+#nexlifydesk-tickets-list td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+#nexlifydesk-tickets-list tr:hover td {
+    background-color: #f9f9f9;
+}
+
+/* Status Badges */
+#nexlifydesk-tickets-list .nexlifydesk-ticket-details .status-open {
+    background: #e6f2ed;
+    color: #1a7f4b;
+    padding: 4px 10px ;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#nexlifydesk-tickets-list .nexlifydesk-ticket-details .status-pending {
+    background: #fff5e5;
+    color: #d67709;
+    padding: 4px 10px ;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#nexlifydesk-tickets-list .nexlifydesk-ticket-details .status-resolved {
+    background: #e8eaf6;
+    color: #3949ab;
+    padding: 4px 10px ;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#nexlifydesk-tickets-list .nexlifydesk-ticket-details .status-closed {
+    background: #f0f0f1;
+    color: #646970;
+    padding: 4px 10px ;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Action Buttons */
+#nexlifydesk-tickets-list .button {
+    padding: 5px 10px;
+    font-size: 0.85em;
+    background: #2271b1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#nexlifydesk-tickets-list .button:hover {
+    background: #135e96;
+}
+
+/* Empty State */
+#nexlifydesk-tickets-list > p {
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px;
+    text-align: center;
+    color: #646970;
+}
+
+/* Loading State */
+#nexlifydesk-tickets-list > p:empty::before {
+    content: "Loading tickets...";
+    color: #646970;
+}
+
+/* --- Professional Chat Bubble Replies --- */
+.nexlifydesk-reply {
+    max-width: 70%;
+    margin-bottom: 18px;
+    padding: 16px 22px;
+    border-radius: 18px 18px 18px 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: relative;
+    clear: both;
+    font-size: 15px;
+    word-break: break-word;
+    transition: background 0.2s;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+/* Customer (gray/white bubble) */
+.nexlifydesk-reply.reply-customer {
+    background: #f6f8fa;
+    border: 1.5px solid #e1e4e8;
+    color: #23282d;
+}
+
+/* Admin (blue bubble) */
+.nexlifydesk-reply.reply-admin {
+    background: linear-gradient(135deg, #e3f0ff 0%, #cbe6ff 100%);
+    border: 1.5px solid #2271b1;
+    color: #1d2327;
+}
+
+/* Agent (green bubble) */
+.nexlifydesk-reply.reply-agent {
+    background: linear-gradient(135deg, #e6f4ea 0%, #c8f2d2 100%);
+    border: 1.5px solid #27ae60;
+    color: #1d2327;
+}
+
+/* Meta styling */
+.nexlifydesk-reply .reply-meta {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+    opacity: 0.85;
+    text-align: left;
+}
+
+.nexlifydesk-reply .reply-role {
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 6px;
+    color: #2271b1;
+}
+
+.nexlifydesk-reply.reply-agent .reply-role {
+    color: #27ae60;
+}
+
+.nexlifydesk-reply.reply-customer .reply-role {
+    color: #888;
+}
+
+/* Chat bubble tail on left for all */
+.nexlifydesk-reply::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 18px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 12px solid;
+    border-bottom: 10px solid transparent;
+}
+.nexlifydesk-reply.reply-customer::before {
+    border-right-color: #f6f8fa;
+}
+.nexlifydesk-reply.reply-admin::before {
+    border-right-color: #e3f0ff;
+}
+.nexlifydesk-reply.reply-agent::before {
+    border-right-color: #e6f4ea;
+}
+
+/* Add spacing between bubbles */
+.nexlifydesk-reply + .nexlifydesk-reply {
+    margin-top: 10px;
+}
+
+/* Responsive: Full width on mobile */
+@media (max-width: 600px) {
+    .nexlifydesk-reply {
+        max-width: 100%;
+        padding: 12px 10px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 782px) {
+    .nexlifydesk-filters {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .nexlifydesk-filters select,
+    .nexlifydesk-filters input[type="text"] {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .nexlifydesk-filters button {
+        width: 100%;
+    }
+    
+    #nexlifydesk-tickets-list table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Ensure these styles only affect our plugin */
+#wpbody-content .wrap.nexlifydesk-tickets-page {
+    margin: 20px 0;
+    padding: 0;
+}
+
+#wpbody-content .wrap.nexlifydesk-tickets-page > * {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* NexlifyDesk Single Ticket Admin View Styles */
+.nexlifydesk-ticket-single.nexlifydesk-admin-single {
+    max-width: 1400px ;
+    margin: 20px auto ;
+    padding: 0 ;
+    background: #fff ;
+    border-radius: 8px ;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) ;
+    overflow: hidden ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif ;
+}
+
+/* Header Section - Remove background, make it cleaner */
+.nexlifydesk-ticket-single .nexlifydesk-header {
+    background: #fff ;
+    padding: 20px 30px 10px 30px ;
+    text-align: center ;
+    margin-bottom: 0 ;
+    border-bottom: 1px solid #e1e1e1 ;
+}
+
+.nexlifydesk-ticket-single .nexlifydesk-logo-img {
+    max-width: 150px ;
+    height: auto ;
+    margin-bottom: 0 ;
+}
+
+/* Ticket Title */
+.nexlifydesk-ticket-single h2 {
+    background: #f9f9f9 ;
+    margin: 0 ;
+    padding: 20px 30px ;
+    color: #23282d ;
+    font-size: 22px ;
+    font-weight: 600 ;
+    line-height: 1.4 ;
+    border-bottom: 1px solid #e1e1e1 ;
+    word-wrap: break-word ;
+    white-space: pre-wrap ;
+}
+
+/* Ticket Details Section */
+.nexlifydesk-ticket-details {
+    padding: 25px 30px ;
+    background: #fff ;
+    border-bottom: 1px solid #e1e1e1 ;
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) ;
+    gap: 15px ;
+    align-items: start;
+}
+
+.nexlifydesk-ticket-details p {
+    margin: 0 ;
+    display: flex ;
+    align-items: center ;
+    gap: 12px ;
+    padding: 15px 18px ;
+    background: #f9f9f9 ;
+    border-radius: 4px ;
+    border-left: 3px solid #0073aa ;
+    font-size: 14px ;
+    min-height: 20px ;
+}
+
+.nexlifydesk-ticket-details strong {
+    color: #23282d ;
+    font-weight: 600 ;
+    min-width: 100px ;
+    flex-shrink: 0 ;
+    font-size: 13px ;
+}
+
+/* Priority Badges */
+.nexlifydesk-ticket-details .priority-low {
+    background: #d1e7dd ;
+    color: #0a3622 ;
+    padding: 4px 10px ;
+    border-radius: 12px ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    text-transform: capitalize ;
+}
+
+.nexlifydesk-ticket-details .priority-medium {
+    background: #fff3cd ;
+    color: #664d03 ;
+    padding: 4px 10px ;
+    border-radius: 12px ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    text-transform: capitalize ;
+}
+
+.nexlifydesk-ticket-details .priority-high {
+    background: #f8d7da ;
+    color: #58151c ;
+    padding: 4px 10px ;
+    border-radius: 12px ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    text-transform: capitalize ;
+}
+
+.nexlifydesk-ticket-details .priority-urgent {
+    background: #f5c2c7 ;
+    color: #58151c ;
+    padding: 4px 10px ;
+    border-radius: 12px ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    text-transform: capitalize ;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1) ; }
+    50% { transform: scale(1.05) ; }
+    100% { transform: scale(1) ; }
+}
+
+/* Status Badges */
+.nexlifydesk-ticket-details .status-open {
+    background: #d2edf4 ;
+    color: #0c5460 ;
+    padding: 4px 10px ;
+    border-radius: 12px ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    text-transform: capitalize ;
+}
+
+.nexlifydesk-ticket-details .status-pending {
+    background: #fff3cd ;
+    color: #664d03 ;
+    padding: 4px 10px ;
+    border-radius: 12px ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    text-transform: capitalize ;
+}
+
+.nexlifydesk-ticket-details .status-resolved {
+    background: #d1e7dd ;
+    color: #0a3622 ;
+    padding: 4px 10px ;
+    border-radius: 12px ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    text-transform: capitalize ;
+}
+
+.nexlifydesk-ticket-details .status-closed {
+    background: #e2e3e5 ;
+    color: #41464b ;
+    padding: 4px 10px ;
+    border-radius: 12px ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    text-transform: capitalize ;
+}
+
+/* Select Dropdowns */
+.nexlifydesk-ticket-details select {
+    padding: 4px 8px ;
+    border: 1px solid #ddd ;
+    border-radius: 4px ;
+    background: #fff ;
+    color: #23282d ;
+    font-size: 13px ;
+    cursor: pointer ;
+    transition: border-color 0.2s ease ;
+    min-width: 120px ;
+}
+
+.nexlifydesk-ticket-details select:hover {
+    border-color: #0073aa ;
+}
+
+.nexlifydesk-ticket-details select:focus {
+    outline: none ;
+    border-color: #0073aa ;
+    box-shadow: 0 0 0 1px #0073aa ;
+}
+
+.nexlifydesk-ticket-details .description {
+    font-size: 12px ;
+    color: #646970 ;
+    font-style: italic ;
+    margin-left: 10px ;
+}
+
+/* HR Separator */
+.nexlifydesk-ticket-single hr {
+    border: none ;
+    height: 1px ;
+    background: linear-gradient(to right, transparent, #e0e0e0, transparent) ;
+    margin: 0 ;
+}
+
+/* Message Section */
+.nexlifydesk-ticket-single h3 {
+    color: #23282d ;
+    font-size: 18px ;
+    font-weight: 600 ;
+    margin: 25px 0 15px 0 ;
+    padding: 0 30px ;
+}
+
+.nexlifydesk-ticket-message {
+    margin: 0 30px 25px 30px ;
+    padding: 20px ;
+    background: #f9f9f9 ;
+    border-radius: 4px ;
+    border-left: 3px solid #0073aa ;
+    line-height: 1.5 ;
+    color: #23282d ;
+    white-space: pre-wrap ;
+    word-wrap: break-word ;
+    font-size: 14px ;
+}
+
+/* Attachments Section */
+.nexlifydesk-ticket-single ul {
+    list-style: none ;
+    padding: 0 ;
+    margin: 0 30px 30px 30px ;
+}
+
+.nexlifydesk-ticket-single li {
+    margin-bottom: 10px ;
+}
+
+.nexlifydesk-attachment {
+    display: inline-flex ;
+    align-items: center ;
+    padding: 10px 15px ;
+    background: #fff ;
+    border: 2px solid #e0e0e0 ;
+    border-radius: 6px ;
+    transition: all 0.2s ease ;
+    text-decoration: none ;
+}
+
+.nexlifydesk-attachment:hover {
+    border-color: #2271b1 ;
+    background: #f0f6fc ;
+    transform: translateY(-1px) ;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) ;
+}
+
+.nexlifydesk-attachment::before {
+    content: '📎' ;
+    margin-right: 8px ;
+    font-size: 16px ;
+}
+
+.nexlifydesk-attachment[data-type="image"]::before {
+    content: '🖼️' ;
+}
+
+.nexlifydesk-attachment[data-type="pdf"]::before {
+    content: '📄' ;
+}
+
+.nexlifydesk-attachment a {
+    color: #2271b1 ;
+    text-decoration: none ;
+    font-weight: 500 ;
+}
+
+.nexlifydesk-attachment a:hover {
+    color: #135e96 ;
+}
+
+/* Replies Section */
+.nexlifydesk-replies {
+    margin: 0 30px 30px 30px ;
+    max-height: 600px ;
+    overflow-y: auto ;
+    border: 1px solid #e0e0e0 ;
+    border-radius: 8px ;
+    background: #f8f9fa ;
+    padding: 18px 22px ;
+}
+
+/* Notice for Closed Tickets */
+.nexlifydesk-ticket-single .notice {
+    margin: 20px 30px ;
+    padding: 15px 20px ;
+    border-radius: 6px ;
+    border-left: 4px solid ;
+}
+
+.nexlifydesk-ticket-single .notice-info {
+    background: #e5f4fd ;
+    border-left-color: #2271b1 ;
+    color: #0c5460 ;
+}
+
+.nexlifydesk-ticket-single .notice-error {
+    background: #ffeaea ;
+    border-left-color: #dc3232 ;
+    color: #721c24 ;
+}
+
+.nexlifydesk-ticket-single .notice p {
+    margin: 0 ;
+    font-weight: 500 ;
+}
+
+/* Reply Form */
+.nexlifydesk-ticket-single form {
+    margin: 0 30px 30px 30px ;
+    padding: 20px ;
+    background: #fff ;
+    border: 1px solid #e1e1e1 ;
+    border-radius: 4px ;
+}
+
+.nexlifydesk-ticket-single .form-group {
+    margin-bottom: 15px ;
+}
+
+.nexlifydesk-ticket-single .form-group label {
+    display: block ;
+    margin-bottom: 5px ;
+    font-weight: 600 ;
+    color: #23282d ;
+    font-size: 13px ;
+}
+
+.nexlifydesk-ticket-single .form-group textarea,
+.nexlifydesk-ticket-single .form-group input[type="file"] {
+    width: 100% ;
+    padding: 8px 12px ;
+    border: 1px solid #ddd ;
+    border-radius: 4px ;
+    font-size: 13px ;
+    font-family: inherit ;
+    transition: border-color 0.2s ease ;
+    box-sizing: border-box ;
+}
+
+.nexlifydesk-ticket-single .form-group textarea:focus,
+.nexlifydesk-ticket-single .form-group input[type="file"]:focus {
+    outline: none ;
+    border-color: #0073aa ;
+    box-shadow: 0 0 0 1px #0073aa ;
+}
+
+.nexlifydesk-ticket-single .form-group textarea {
+    resize: vertical ;
+    min-height: 80px ;
+    line-height: 1.4 ;
+}
+
+.nexlifydesk-ticket-single .form-group .description {
+    margin-top: 5px ;
+    font-size: 12px ;
+    color: #646970 ;
+    font-style: normal ;
+}
+
+.nexlifydesk-ticket-single button[type="submit"] {
+    background: #0073aa ;
+    color: #fff ;
+    border: none ;
+    padding: 8px 16px ;
+    border-radius: 4px ;
+    font-size: 13px ;
+    font-weight: 500 ;
+    cursor: pointer ;
+    transition: background-color 0.2s ease ;
+}
+
+.nexlifydesk-ticket-single button[type="submit"]:hover {
+    background: #005a87 ;
+}
+
+/* Form Messages */
+.nexlifydesk-form-messages {
+    margin-bottom: 20px ;
+    padding: 15px ;
+    border-radius: 6px ;
+    display: none ;
+}
+
+.nexlifydesk-form-messages.success {
+    background: #d4edda ;
+    color: #155724 ;
+    border: 1px solid #c3e6cb ;
+    display: block ;
+}
+
+.nexlifydesk-form-messages.error {
+    background: #f8d7da ;
+    color: #721c24 ;
+    border: 1px solid #f5c6cb ;
+    display: block ;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nexlifydesk-ticket-single.nexlifydesk-admin-single {
+        margin: 10px ;
+        border-radius: 0 ;
+    }
+    
+    .nexlifydesk-ticket-single .nexlifydesk-header,
+    .nexlifydesk-ticket-single h2,
+    .nexlifydesk-ticket-details,
+    .nexlifydesk-ticket-single h3,
+    .nexlifydesk-ticket-message,
+    .nexlifydesk-ticket-single ul,
+    .nexlifydesk-replies,
+    .nexlifydesk-ticket-single .notice,
+    .nexlifydesk-ticket-single form {
+        margin-left: 15px ;
+        margin-right: 15px ;
+        padding-left: 20px ;
+        padding-right: 20px ;
+    }
+    
+    .nexlifydesk-ticket-details {
+        grid-template-columns: 1fr ;
+        gap: 15px ;
+    }
+    
+    .nexlifydesk-ticket-details p {
+        flex-direction: column ;
+        align-items: flex-start ;
+        gap: 5px ;
+    }
+    
+    .nexlifydesk-ticket-details strong {
+        min-width: auto ;
+    }
+    
+    .nexlifydesk-ticket-single h3::after {
+        left: 15px ;
+    }
+}
+
+@media (max-width: 480px) {
+    .nexlifydesk-ticket-single h2 {
+        font-size: 20px ;
+        padding: 20px 15px ;
+    }
+    
+    .nexlifydesk-ticket-single .nexlifydesk-header {
+        padding: 20px 15px ;
+    }
+    
+    .nexlifydesk-ticket-details select {
+        width: 100% ;
+        min-width: auto ;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .nexlifydesk-ticket-single form,
+    .nexlifydesk-ticket-single .notice,
+    .nexlifydesk-ticket-details select {
+        display: none ;
+    }
+    
+    .nexlifydesk-ticket-single.nexlifydesk-admin-single {
+        box-shadow: none ;
+        border: 1px solid #ccc ;
+    }
+}
